@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.profile-card{
+    width: 30vw;
+    height: 50vh;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px grey;
+}
+
+.upper-side{
+    height: 30%;
+    background-color: rgb(44, 111, 255);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.profile-picture{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(44, 111, 255);
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -15px;
+}
+
+.profile-picture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding: 3px;
+}
+
+.lower-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.name{
+    font-size: 2vw;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+}
+
+.profession{
+    font-size: 1.6vw;
+    color: grey;
+    margin-top: 10px;
+}
+
+.socials{
+    display: flex;
+    list-style: none;
+    margin: 15px 0px;
+    padding: 0;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.socials li img{
+    height: 35px;
+    cursor: pointer;
+}
+
+.buttons{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn{
+    background-color: rgb(44, 111, 255);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.engagement{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.engagement div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.engagement div img{
+    height: 17px;
+    margin-right: 5px;
+}
+
+.like, .comment{
+    border-right: 2px solid grey;
+}
+
