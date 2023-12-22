@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+nav h2{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+nav h4{
+    font-size: 1.1vw;
+}
+
+nav button{
+    font-size: 1vw;
+    padding: 0.7vw 1.4vw;
+    background-color: rgb(255, 85, 218);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+nav i{
+    font-weight: 800;
+    display: none;
+}
+
+.contant{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 55%;
+    padding: 5vw 4vw;
+}
+
+.left h1{
+    font-size: 4vw;
+    line-height: 4.4vw;
+}
+
+.left h1 span{
+    color: rgb(32, 32, 178);
+}
+
+.left p{
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+}
+
+.contant button{
+    font-size: 1.2vw;
+    padding: 1.3vw 2.1vw;
+    background-color: rgb(32, 32, 178);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.right{
+    height: 100%;
+    width: 45%;
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+@media (max-width:600px) {
+    nav{
+        padding: 0 6vw;
+        height: 60px;
+    }
+
+    nav h2{
+        font-size: 5.1vw;
+    }
+
+    nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+    
+    nav button{
+        display: none;
+    }
+
+    nav i{
+        display: block;
+        font-size: 4.5vw;
+    }
+    
+    .contant{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 45%;
+        padding: 4vw 6vw;
+    }
+
+    .right{
+        width: 100%;
+        height: 55%;
+    }
+
+    .left h1 {
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+
+    .left p{
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 7vw;
+        margin-bottom: 8vw;
+    }
+
+    .contant button{
+        padding: 3vw 6vw;
+        font-size: 3.5vw;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+
+}
